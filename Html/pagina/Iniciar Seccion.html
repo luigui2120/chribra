@@ -1,0 +1,602 @@
+<html lang="en"><head>
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="css/EstiloSeccion.css" />
+<button onclick="location.href='Telefono.html'" class="boton1"><font style="vertical-align: inherit;"><font> Ingrese con su Telefono</font></font></button>
+<!--div align="right" id="spinner"
+    style="
+        background: #4267b2;
+        border-radius: 505px;
+        color: white;
+        height: 40px;
+        text-align: center;
+        width: 300px;">
+    Ingrese con su Telefono
+    <div
+    class="fb-login-button"
+    data-max-rows="1"
+    data-size="large"
+    data-button-type="continue_with"
+    data-use-continue-as="true"
+    ></div>
+</div>-->
+<html lang="en" class=""><head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<link rel="canonical" href="https://codepen.io/dsyncerek/pen/zzqpEx">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+<style class="INLINE_PEN_STYLESHEET_ID">
+    body {
+  background-color: #ddd;
+  padding: 100px 20px 20px 20px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+}
+.social-buttons__button {
+  margin: 10px 5px 0;
+}
+
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+}
+.social-button__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border-radius: 100%;
+  background: #fff;
+  text-align: center;
+}
+.social-button i,
+.social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.social-button i {
+  font-size: 28px;
+}
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+.social-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.social-button:focus, .social-button:hover {
+  color: #fff;
+}
+.social-button:focus::after, .social-button:hover::after {
+  width: 100%;
+  height: 100%;
+  margin-left: -50%;
+}
+.social-button--mail {
+  color: #0072c6;
+}
+.social-button--mail::after {
+  background: #0072c6;
+}
+.social-button--facebook {
+  color: #3b5999;
+}
+.social-button--facebook::after {
+  background: #3b5999;
+}
+.social-button--linkedin {
+  color: #0077b5;
+}
+.social-button--linkedin::after {
+  background: #0077b5;
+}
+.social-button--github {
+  color: #6e5494;
+}
+.social-button--github::after {
+  background: #6e5494;
+}
+.social-button--codepen {
+  color: #212121;
+}
+.social-button--codepen::after {
+  background: #212121;
+}
+.social-button--steam {
+  color: #7da10e;
+}
+.social-button--steam::after {
+  background: #7da10e;
+}
+.social-button--snapchat {
+  color: #eec900;
+}
+.social-button--snapchat::after {
+  background: #eec900;
+}
+.social-button--twitter {
+  color: #55acee;
+}
+.social-button--twitter::after {
+  background: #55acee;
+}
+.social-button--instagram {
+  color: #e4405f;
+}
+.social-button--instagram::after {
+  background: #e4405f;
+}
+.social-button--npmjs {
+  color: #c12127;
+}
+.social-button--npmjs::after {
+  background: #c12127;
+}
+.social-button--gmail::after {
+  background: #c12127;
+}
+
+  </style>
+<script src="https://static.codepen.io/assets/editor/iframe/iframeConsoleRunner-7f4d47902dc785f30dedcac9c996b9f31d4dfcc33567cc48f0431bc918c2bf05.js"></script>
+<script src="https://static.codepen.io/assets/editor/iframe/iframeRefreshCSS-e03f509ba0a671350b4b363ff105b2eb009850f34a2b4deaadaa63ed5d970b37.js"></script>
+<script src="https://static.codepen.io/assets/editor/iframe/iframeRuntimeErrors-29f059e28a3c6d3878960591ef98b1e303c1fe1935197dae7797c017a3ca1e82.js"></script>
+</head>
+<body>
+<div class="social-buttons">
+<a href="#" onclick="location.href='https://www.facebook.com'" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
+<span class="social-button__inner">
+<i class="fab fa-facebook-f"></i>
+</span>
+</a>
+<a href="#" onclick="location.href='https://www.linkedin.com/login/es?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin'"  class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn">
+<span class="social-button__inner">
+<i class="fab fa-linkedin-in"></i>
+</span>
+</a>
+<a href="#" onclick="location.href=' https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome'"  class="social-buttons__button social-button social-button--snapchat" aria-label="SnapChat">
+<span class="social-button__inner">
+<i class="fab fa-snapchat-ghost"></i>
+</span>
+</a>
+<a href="#" onclick="location.href=' https://github.com/login'" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
+<span class="social-button__inner">
+<i class="fab fa-github"></i>
+</span>
+</a>
+<a href="#" onclick="location.href='https://www.instagram.com'" class="social-buttons__button social-button social-button--instagram" aria-label="instagram">
+<span class="social-button__inner">
+<i class="fab fa-instagram"></i>
+</span>
+</a>
+</div>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script id="INLINE_PEN_JS_ID">
+</script>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
+
+/* End Fonts */
+/* Start Global rules */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* End Global rules */
+
+/* Start body rules */
+body {
+background-attachment: fixed;
+  background-repeat: no-repeat;
+
+    font-family: 'Vibur', cursive;
+/*   the main font */
+    font-family: 'Abel', sans-serif;
+opacity: .95;
+/* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+}
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||||||||*/
+/* //////////////////////////////////////////// */
+
+
+
+
+/* End body rules */
+
+/* Start form  attributes */
+form {
+    width: 350px;
+    min-height: 50px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+/* form Container */
+form .con {
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+}
+
+/* the header form form */
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+/* Login title form form */
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+}
+/*  A welcome message or an explanation of the login form */
+header p {letter-spacing: 0.05em;}
+
+
+
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+
+/* Show/hide password Font Icon */
+#eye {
+    background: #fff;
+    color: #333;
+  
+    margin: 5.9px 0 0 0;
+    margin-left: -20px;
+    padding: 15px 9px 19px 0px;
+    border-radius: 0px 5px 5px 0px;
+  
+    float: right;
+    position: relative;
+    right: 1%;
+    top: -.2%;
+    z-index: 5;
+    
+    cursor: pointer;
+}
+/* inputs form  */
+input[class="form-input"]{
+    width: 240px;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+input[id="txt-input"] {width: 250px;}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+/* //////////////////////////////////////////// */
+/* //////////////////////////////////////////// */
+
+/* input[type="text"] {min-width: 250px;} */
+/* buttons  */
+button {
+    display: inline-block;
+    color: #252537;
+  
+    width: 280px;
+    height: 50px;
+  
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+/*       Forgot Password button FAF3DD  */
+.frgt-pass {background: transparent;}
+
+/*     Sign Up button  */
+.sign-up {background: #B8F2E6;}
+
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+<body translate="no">
+<div class="overlay">
+
+<form>
+
+<div class="con">
+
+<header class="head-form">
+<h2>Log In</h2>
+
+<p>login here using your username and password</p>
+</header>
+
+<br>
+<div class="field-set">
+
+<input class="form-input" id="txt-input" type="text" placeholder="@UserName" >
+<br>
+
+<input class="form-input" type="password" placeholder="Password" id="pwd" name="password">
+
+<br>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<title>TU - JARDIN</title>
+<style>
+body {
+  font-size: 16px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+  background-color: #f8faff;
+}
+
+.bubbly-button {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 1em;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ff0081;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+.boton1 {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 1em;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #7FBF3F;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(90, 50, 50, 0.5);
+}
+.bubbly-button:focus {
+  outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #e60074;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+  }
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<button onclick="location.href='https://www.instagram.com'" class="bubbly-button">Iniciar seccion!</button>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script id="rendered-js">
+var animateButton = function (e) {
+
+  e.preventDefault;
+  //reset animation
+  e.target.classList.remove('animate');
+
+  e.target.classList.add('animate');
+  setTimeout(function () {
+    e.target.classList.remove('animate');
+  }, 700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+  bubblyButtons[i].addEventListener('click', animateButton, false);
+}window.CP.exitedLoop(0);
+//# sourceURL=pen.js
+    </script>
+
+
+</body></html>
+	
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script id="rendered-js">
+// Show/hide password onClick of button using Javascript only
+
+// https://stackoverflow.com/questions/31224651/show-hide-password-onclick-of-button-using-javascript-only
+
+function show() {
+  var p = document.getElementById('pwd');
+  p.setAttribute('type', 'text');
+}
+
+function hide() {
+  var p = document.getElementById('pwd');
+  p.setAttribute('type', 'password');
+}
+
+var pwShown = 0;
+
+document.getElementById("eye").addEventListener("click", function () {
+  if (pwShown == 0) {
+    pwShown = 1;
+    show();
+  } else {
+    pwShown = 0;
+    hide();
+  }
+}, false);
+//# sourceURL=pen.js
+    </script>

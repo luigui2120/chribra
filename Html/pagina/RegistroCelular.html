@@ -1,0 +1,20 @@
+<p>Para registrarte Pon tu Numero Aqui</p>
+<p>Se Te enviara un codigo para Registrarte </p>	
+
+<form name="ejemplo1" action="15-html5-tel-input-demo2.php" method="POST">
+	    Introduce tu TELEFONO con los 9 dígitos: <input type="tel" name="telefono" pattern="[0-9]{9}">
+	    <input type="submit" value="Enviar">
+</form>
+</form>
+
+
+
+<script>
+var finished_rendering = function() {
+  console.log("finished rendering plugins");
+  var spinner = document.getElementById("spinner");
+  spinner.removeAttribute("style");
+  spinner.removeChild(spinner.childNodes[0]);
+}
+FB.Event.subscribe('xfbml.render', finished_rendering);
+</script>

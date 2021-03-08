@@ -1,0 +1,61 @@
+body{
+	background: url("../img/pago.png");
+	background-attachment: fixed;
+}
+.boton {
+padding: 24px; /*espacio alrededor texto*/
+background-color: #5FFF33; /*color botón*/
+color: #ffffff; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+	cursor: pointer; 
+  font-family: 'Raleway', Arial, Helvetica;
+font-size: 22px;
+  height: 10px;
+  margin: 10px auto;
+transition: all 0.2s ease 0s;
+ width: 90px;
+	position: relative;
+	bottom: -250px;
+}
+.boton:hover{
+	background: #0096f7;
+}
+.boton:active {
+  text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+	transform: translateY(4px);
+  transition: all 0.1s ease 0s;
+  margin: 100px auto 100px auto;
+}
+.boton1 {
+  background-color: transparent;
+  border: none;
+   float: right;
+ background-image:url(https://www.nutecoweb.com/wp-content/uploads/2013/10/boton-paypal.png);
+  background-repeat:no-repeat;
+  height:60px;
+  width:300px;
+  background-position:center;
+	position: relative;
+	 right: 570px;
+	bottom: -380px;
+	padding: 34px; /*espacio alrededor texto*/
+background-color: #; /*color botón*/
+color: #ffffff; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+	cursor: pointer; 
+  font-family: 'Raleway', Arial, Helvetica;
+font-size: 22px;
+  height: 10px;
+  margin: 10px auto;
+transition: all 0.2s ease 0s;
+   
+}
+.boton2{
+	top: 10px; /* ajustar los valores para mover la imagen */
+    right: 480px;
+	background-color: #ff8000; /*color botón*/
+}

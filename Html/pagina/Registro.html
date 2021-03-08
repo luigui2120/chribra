@@ -1,0 +1,62 @@
+<link rel="stylesheet" type="text/css" href="/css/EstiloRegistro.css">
+<html>
+<head>
+    <title>Registro - Tu Jardin</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="/css/EstiloRegistro.css" rel="stylesheet" />
+</head>
+ 
+<body>
+    <div id="envoltura">
+            <div id="cabecera">
+                <img width="360" border="1" height="480"  src="/img/dise%C3%B1o.jpg" >
+            </div>
+ 
+            <div id="cuerpo">
+ 
+                <form id="form-login" action="#" method="post" >
+                    <p><label style="color:hsl(111, 80%, 60%);" for="nombre">Nombre:</label></p>
+                        <input name="nombre" type="text" id="nombre" class="nombre" placeholder="Pon tu nombre" autofocus=""/ ></p>
+ 
+                    <!--=============================================================================================-->
+                    <!--La sisguientes 2 líneas son para agregar campos al formulario con sus respectivos labels-->
+                    <!--Puedes usar tantas como necesites-->
+                    <p><label style="color:hsl(111, 80%, 60%);" for="apellidos">Apellidos:</label></p>
+                        <input name="apellidos" type="text" id="apellidos" class="apellidos" placeholder="Pon tus apellidos" /></p>
+                    <!--=============================================================================================-->
+ 
+                    <p><label  style="color:hsl(111, 80%, 60%);" for="correo">Correo:</label></p>
+                        <input name="correo" type="text" id="correo" class="correo" placeholder="Pon tu mail" /></p>
+ 
+                    <p><label style="color:hsl(111, 80%, 60%);" for="pass">Contraseña:</label></p>
+                        <input name="pass" type="password" id="pass" class="pass" placeholder="Pon tu contraseña"/ ></p>
+ 
+                    <p><label style="color:hsl(111, 80%, 60%);" for="repass">Repetir Contraseña:</label></p>
+                        <input name="repass" type="password" id="repass" class="repass" placeholder="Repite contraseña" /></p>
+ 
+                    
+<script>
+var finished_rendering = function() {
+  console.log("finished rendering plugins");
+  var spinner = document.getElementById("spinner");
+  spinner.removeAttribute("style");
+  spinner.removeChild(spinner.childNodes[0]);
+}
+FB.Event.subscribe('xfbml.render', finished_rendering);
+</script>
+<div id="spinner"
+    style="
+        background: #4267b2;
+        border-radius: 5px;
+        color: white;
+        height: 40px;
+        text-align: center;
+        width: 250px;">
+    <div
+    class="fb-login-button"
+    data-max-rows="1"
+    data-size="large"
+    data-button-type="continue_with"
+    data-use-continue-as="true"
+    ></div>
+</div>
